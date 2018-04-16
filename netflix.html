@@ -1,0 +1,336 @@
+<html>
+  <head>
+    <title>
+      My first page
+    </title>
+      <style>
+
+      *{
+       box-sizing: border-box;
+      }
+
+    #header{
+      background: black;
+      color:white;
+      overflow: auto;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+    #header a{
+      text-decoration: none;
+      font-family: helvetica;
+    }
+
+
+    .logo{
+      float: left;
+      display: inline-block;
+      background: red;
+      padding: 20px;
+      margin-right: 25px;
+    }
+    .leftMenu{
+      float: left;
+      display: inline-block;
+
+    }
+    .leftMenu ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .leftMenu ul li{
+      display: inline-block;
+      padding: 20px;
+
+    }
+
+    .leftMenu ul li a{
+      color: white;
+
+    }
+    .leftMenu ul li a.dropdown{
+      color: red;
+
+    }
+
+
+    .rightMenu{
+      float: right;
+      display: inline-block;
+      color: black;
+
+    }
+    .rightMenu ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .rightMenu ul li{
+      display: inline-block;
+      padding: 20px;
+
+    }
+    .rightMenu ul li a{
+      color: white;
+
+    }
+    .leftMenu ul li a:hover, .rightMenu ul li a:hover{
+      color: red;
+    }
+
+  #largeImage {
+    padding: 200px 25;
+    background:  -webkit-linear-gradient(45deg, rgba(231,31,17, .7) 0%,#000000 100%), url(http://cdn.collider.com/wp-content/uploads/Bane-Batman-standoff-The-Dark-Knight-Rises-wall-poster1.jpg) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+  .descriptionbox {
+    width: 50%;
+
+  }
+  .descriptionbox h1{
+    font-family: helvetica;
+    margin: 0;
+    font-weight: 400;
+    font-size: 60px;
+    color: white;
+
+  }
+     .descriptionbox h3{
+       font-family: helvetica;
+       font-size: 25px;
+       font-weight: 300;
+      color: white;
+      margin: 0;
+
+  }
+   .descriptionbox h4{
+     font-family: helvetica;
+     font-weight: 300;
+     margin: 0px;
+    color: white;
+
+  }
+  .descriptionbox p{
+    margin-top: 25px !important;
+     font-family: helvetica;
+     font-weight: 100;
+     font-size: 18px;
+     margin: 0 0 50px 0;
+    color: white;
+
+  }
+    .button1 {
+      display: inline-block;
+      padding: 7px 7px;
+      border: 3px solid black;
+      background: #000;
+      color: white;
+      cursor: pointer;
+    }
+
+
+      .button2 {
+      display: inline-block;
+      padding: 7px 7px;
+      border: 3px solid black;
+      color: #fff;
+      cursor: pointer;
+    }
+    .button1:hover{
+        background: rgba(0,0,0,.6);
+
+    }
+    .button2:hover{
+       background: rgba(0,0,0,.6);
+       border: 2px solid rgba(0,0,0,.6);
+    }
+
+    #videoSection {
+      width: 100%;
+      background: black;
+
+    }
+    .row{
+      width: 100%;
+      font-size: 0;
+    }
+
+    .videoBoxes{
+      display: inline-block;
+      background: red;
+      width: 300px;
+      min-height: 150px;
+      font-size: 16px;
+      margin: 2.5%;
+      padding: 15px;
+    }
+
+    .videoBoxes h4 {
+      font-family: helvetica;
+      font-weight: 100;
+      margin: 0;
+      padding: 0;
+      font-size: 30px;
+      color: white;
+
+    }
+    .videoBoxes p {
+      display: none;
+
+
+    }
+
+
+     .video1{
+       background: -webkit-linear-gradient(45deg, rgba(231,31,17, .4) 0%,#000000 100%), url(https://images-na.ssl-images-amazon.com/images/I/519sXRJI0ZL._SX450_.jpg) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+     }
+     .video2{
+       background: -webkit-linear-gradient(45deg, rgba(231,31,17, .5) 0%,#000000 100%), url(https://shyfyy.files.wordpress.com/2013/05/pacrim15.jpg) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+     }
+     .video3{
+       background: -webkit-linear-gradient(45deg, rgba(231,31,17, .4) 0%,#000000 100%), url(https://cinemania-cdn.s3.amazonaws.com/img/conts/22cd496_hob.jpg) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+     }
+     .video4{
+       background: -webkit-linear-gradient(45deg, rgba(231,31,17, .4) 0%,#000000 100%), url(http://tattyfraney.com/wp-content/uploads/2017/06/nice-horizontal-movie-posters-and-adorable-ideas-of-the-best-worst-2015.jpg) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+     }
+     .video5{
+       background: -webkit-linear-gradient(45deg, rgba(231,31,17, .4) 0%,#000000 100%), url(https://2.bp.blogspot.com/-xz-s9VvspbI/V7ZrbOlwZyI/AAAAAAAABlc/k9w-5cyC6YU9Aw-o7BUqJixh2wsLs7miQCLcB/s1600/Free%2Bdownload%2Bbluray%2B1080p%2Bmovie%2Bgoogle%2Bdrive%2BThe%2BVow%252C%2BUSA%252C%2B2013%252C%2BMichael%2BSucsy%252C%2BDrama%252C%2BRomance%252C%2BRachel%2BMcAdams%252C%2BChanning%2BTatum%252C%2BSam%2BNeill.jpg) no-repeat left center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+     }
+
+     /*For Mobile*/
+
+     @media only screen and (max-width: 600px) {
+      .videoBoxes{
+        width: 95%;
+        margin: 2.5%;
+      }
+      .videoBoxes h4{
+        font-family: helvetica;
+        font-weight: 100;
+        font-size: 30px;
+
+      }
+      .videoBoxes p{
+        display: block;
+        font-family: helvetica;
+        font-weight: 300;
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+
+
+    </style>
+
+  </head>
+  <body>
+
+
+    <div id="header">
+      <div class="logo">Netflix</div>
+
+      <div class="leftMenu">
+        <ul>
+          <li>
+            <a href="kids.html" class="dropdown">Browse</a>
+          </li>
+          <li>
+            <a href="kids.html">Kids</a>
+          </li>
+          <li>
+            <a href="kids.html">Dvd</a>
+          </li>
+        </ul>
+      </div>
+
+    <div class="rightMenu">
+      <ul>
+          <li>
+            <a href="kids.html">Search</a>
+          </li>
+          <li>
+            <a href="kids.html">Bell</a>
+          </li>
+          <li>
+            <a href="kids.html">Username</a>
+          </li>
+        </ul>
+    </div>
+
+    </div>
+
+    <div id="largeImage">
+      <div class="descriptionbox">
+
+        <h4>Netflix Presents</h4>
+        <h1>Batman is back!</h1>
+        <h3>Coming Soon!</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit erat non nibh aliquam elementum. Fusce ac risus orci. Fusce eu consectetur turpis. Praesent molestie dui eu pulvinar viverra. Fusce efficitur, ipsum non finibus interdum, lectus nisi sagittis libero, eget ultrices sapien nunc at lacus
+        </p>
+
+        <div class="button1">Button1</div>
+        <div class="button2">Button2</div>
+
+        </div>
+
+    </div>
+      <div id="videoSection">
+        <div class="row">
+          <div class="videoBoxes video1">
+            <h4>Harry Potter</h4>
+            <p>Vivamus odio tellus, congue eu quam ut, auctor rhoncus felis. Sed non elit tellus. Sed sit amet nunc maximus, porttitor nisl in, rhoncus nibh. Suspendisse massa sem.
+            </p>
+          </div>
+          <div class="videoBoxes video2">
+            <h4>Pacific Rim</h4>
+            <p>Vivamus odio tellus, congue eu quam ut, auctor rhoncus felis. Sed non elit tellus. Sed sit amet nunc maximus, porttitor nisl in, rhoncus nibh. Suspendisse massa sem.
+            </p>
+          </div>
+          <div class="videoBoxes video3">
+            <h4>The Hobbit</h4>
+            <p>Vivamus odio tellus, congue eu quam ut, auctor rhoncus felis. Sed non elit tellus. Sed sit amet nunc maximus, porttitor nisl in, rhoncus nibh. Suspendisse massa sem.
+            </p>
+          </div>
+          <div class="videoBoxes video4">
+            <h4>Star Wars</h4>
+            <p>Vivamus odio tellus, congue eu quam ut, auctor rhoncus felis. Sed non elit tellus. Sed sit amet nunc maximus, porttitor nisl in, rhoncus nibh. Suspendisse massa sem.
+            </p>
+          </div>
+          <div class="videoBoxes video5">
+            <h4>The Vow</h4>
+            <p>Vivamus odio tellus, congue eu quam ut, auctor rhoncus felis. Sed non elit tellus. Sed sit amet nunc maximus, porttitor nisl in, rhoncus nibh. Suspendisse massa sem.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+  </body>
+</html>
